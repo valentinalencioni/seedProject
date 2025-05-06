@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Bienvenido al portal de tareas
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -18,3 +18,47 @@
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>
+
+<ion-menu menuId="first-menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Tareas Pendientes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    This is the first menu content.
+  </ion-content>
+</ion-menu>
+
+<ion-menu menuId="second-menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Second Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the second menu content.</ion-content>
+</ion-menu>
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>End Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the end menu content.</ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Centro de Tareas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <p>Elija una opción</p>
+
+    <ion-button expand="block" (click)="openFirstMenu()">Tareas Pendientes</ion-button>
+    <ion-button expand="block" (click)="openSecondMenu()">Gestionar Prioridad</ion-button>
+    <ion-button expand="block" (click)="openEndMenu()">Open End Menu</ion-button>
+  </ion-content>
+</div>

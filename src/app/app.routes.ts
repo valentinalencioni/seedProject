@@ -10,4 +10,16 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'tareas-pendientes',
+    loadComponent: () => import('./tareas-pendientes/tareas-pendientes.page').then( m => m.TareasPendientesPage)
+  },
+  {
+    path: 'prioridad-tareas',
+    loadComponent: () => import('./prioridad-tareas/prioridad-tareas.page').then( m => m.PrioridadTareasPage)
+  },
+  {
+    path: 'tareas-realizadas',
+    loadComponent: () => import('./tareas-realizadas/tareas-realizadas.page').then( m => m.TareasRealizadasPage)
+  },
 ];
