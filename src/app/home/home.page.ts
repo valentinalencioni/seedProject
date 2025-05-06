@@ -36,12 +36,13 @@ export class HomePage {
     this.router.navigate(['prioridad-tareas']);
   }
 
-  openEndMenu() {
+  async openEndMenu() {
     /**
      * Open the menu by side
      * We can refer to the menu by side
      * here because only one "end" menu exists
      */
-    this.menuCtrl.open('end');
+    await this.menuCtrl.open('preferencias-tareas');
+    this.router.navigate(['preferencias-tareas']);
   }
 }

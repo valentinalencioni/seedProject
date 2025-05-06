@@ -13,10 +13,10 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonCheckbox, IonItem, IonL
 export class TareasPendientesPage {
 
   tareas = [
-    { descripcion: 'Diseñar interfaces responsivas', completada: false },
-    { descripcion: 'Implementar componentes reutilizables', completada: false },
+    { descripcion: 'Implementar UI', completada: false },
+    { descripcion: 'Crear componentes reutilizables', completada: false },
     { descripcion: 'Conectar API REST', completada: false },
-    { descripcion: 'Escribir pruebas unitarias', completada: false },
-    { descripcion: 'Depurar errores en el navegador', completada: false },
+    { descripcion: 'Realizar pruebas', completada: false },
+    { descripcion: 'Depurar errores', completada: false },
   ];
 }

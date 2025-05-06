@@ -19,7 +19,7 @@ export const routes: Routes = [
     loadComponent: () => import('./prioridad-tareas/prioridad-tareas.page').then( m => m.PrioridadTareasPage)
   },
   {
-    path: 'tareas-realizadas',
-    loadComponent: () => import('./tareas-realizadas/tareas-realizadas.page').then( m => m.TareasRealizadasPage)
+    path: 'preferencias-tareas',
+    loadComponent: () => import('./preferenciasTareas/preferencias-tareas.page').then( m => m.TareasRealizadasPage)
   },
 ];
